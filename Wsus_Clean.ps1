@@ -24,7 +24,7 @@ try{
 }
 catch [System.Exception]{
     Write-Host "Failed to get updates."
-	Write-Host "Error:" $_.Exception.Message
+    Write-Host "Error:" $_.Exception.Message
     return
 }
 Write-Host "Processing Updates"
@@ -36,7 +36,7 @@ foreach($u in $au){
     if (!$u.IsDeclined -and $u.IsSuperseded){
         $cs++     
         if ($u.CreationDate -lt (get-date).AddDays(-$ExclusionPeriod)){
-		    $csp++
+	    $csp++
         }		       
     }
 }
