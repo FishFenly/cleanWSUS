@@ -1,6 +1,6 @@
 # cleanWSUS
 
-PowerShell script to connect to the UpdateServices API.
+PowerShell scripts to connect to the UpdateServices API and perform cleanup actions.
 
 -Wsus Decline-
 Finds all updates,
